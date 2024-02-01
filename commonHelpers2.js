@@ -1,0 +1,2 @@
+import"./assets/modulepreload-polyfill-ec808ebb.js";import{i}from"./assets/vendor-651d7991.js";const o=document.querySelector(".form");o.addEventListener("submit",m);function m(n){n.preventDefault();const t=o.delay.value,s=o.state.value;new Promise((e,r)=>{s==="fulfilled"?setTimeout(()=>e(t),t):s==="rejected"&&setTimeout(()=>r(t),t)}).then(e=>{i.success({message:`✅ Fulfilled promise in ${e}ms`,position:"topCenter"})}).catch(e=>{i.error({message:`❌Rejected promise in ${e}ms`,position:"topCenter"})})}
+//# sourceMappingURL=commonHelpers2.js.map
